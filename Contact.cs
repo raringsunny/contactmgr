@@ -4,7 +4,6 @@ namespace contactmgr
 {
     public class Contact
     {
-
         public string Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -12,7 +11,6 @@ namespace contactmgr
         public string Email { get; set; }
 
         // public string Address{get; set;}
-
 
         public string GetContactById(string pContactName)
         {

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Manoj;Mohan</Authors>
+    <Company>Personal</Company>
+    <Description>Contact Manager Application</Description>
+    <AssemblyTitle>Contact Manager</AssemblyTitle>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <AssemblyName>contactmgr</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>alpha</VersionSuffix>
+    <PackageId>contactmgr</PackageId>
+    <RuntimeFrameworkVersion>2.0.0</RuntimeFrameworkVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+  </PropertyGroup>
+
+</Project>

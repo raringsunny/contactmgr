@@ -13,7 +13,7 @@ namespace contactmgr
             Contact contact = new Contact();
 
 
-            Console.WriteLine(contact.GetContactById("manoj"));
+            Console.WriteLine(contact.GetContactById("manoj mohan"));
         }
     }
 }
