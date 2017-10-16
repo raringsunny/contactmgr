@@ -17,5 +17,13 @@ namespace contactmgr
             return pContactName;
             // return FirstName + ' ' + LastName;
         }
+
+        public string SaveContact(Contact objContact){
+            
+            
+
+
+            return "Saved";
+        }
     }
 }
