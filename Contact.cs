@@ -7,8 +7,6 @@ using Microsoft.Extensions.Configuration;
 namespace contactmgr
 {
 
-
-
     public class Contact
     {
 
