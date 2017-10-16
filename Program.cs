@@ -12,25 +12,28 @@ namespace contactmgr
     {
         public static void Main(string[] args)
         {
+            Contact objContact = new Contact();
+            try
+            {
+                        
 
-            Contact contact = new Contact();
+                        objContact.FirstName = "Manoj";
+                        objContact.LastName = "Mohan";
+                        objContact.Email = "mmohan@xebia.com";
+                        objContact.Phone = "9686569319";
 
-
-            var md = new MongoClient("mongodb://localhost:27017");
-
-            var db = md.GetDatabase("testDB");
-
-            var doc = new BsonDocument{
-                {"name", "Sunny"},
-                {"age", 39},
-                {"phone", "9686569319"}
-            };
-
-            var coll = db.GetCollection<BsonDocument>("Contact");
-
-            coll.InsertOne(doc);
-
-            Console.WriteLine(contact.GetContactById("manoj mohan"));
+                        Console.WriteLine(objContact.Save(objContact));
+                
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+            finally
+            {
+                objContact = null;
+            }
 
         }
     }

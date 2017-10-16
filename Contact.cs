@@ -1,9 +1,17 @@
 using System;
+using System.IO;
+using MongoDB.Bson;
+using MongoDB.Driver;
+using Microsoft.Extensions.Configuration;
 
 namespace contactmgr
 {
+
+
+
     public class Contact
     {
+
         public string Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -18,12 +26,36 @@ namespace contactmgr
             // return FirstName + ' ' + LastName;
         }
 
-        public string SaveContact(Contact objContact){
-            
-            
+        public string Save(Contact objContact)
+        {
 
+            ConfigurationReader cr = new ConfigurationReader();
 
-            return "Saved";
+            Contact contact = new Contact();
+
+            try
+            {
+                var md = new MongoClient(cr.MongoServer);
+
+                var db = md.GetDatabase("testDB");
+
+                var doc = new BsonDocument{
+                {"name", objContact.FirstName + ' ' + objContact.LastName},
+                {"phone", objContact.Phone},
+                {"email", objContact.Email}
+            };
+
+                var coll = db.GetCollection<BsonDocument>("Contact");
+
+                coll.InsertOne(doc);
+
+                return "Contact saved successfully!";
+            }
+            finally
+            {
+                cr = null;
+                contact = null;
+            }
         }
     }
 }

@@ -1,0 +1,10 @@
+/Users/manoj/Projects/aspnetcore/contactmgr/bin/Debug/netcoreapp2.0/contactmgr.deps.json
+/Users/manoj/Projects/aspnetcore/contactmgr/bin/Debug/netcoreapp2.0/contactmgr.runtimeconfig.json
+/Users/manoj/Projects/aspnetcore/contactmgr/bin/Debug/netcoreapp2.0/contactmgr.runtimeconfig.dev.json
+/Users/manoj/Projects/aspnetcore/contactmgr/bin/Debug/netcoreapp2.0/contactmgr.dll
+/Users/manoj/Projects/aspnetcore/contactmgr/bin/Debug/netcoreapp2.0/contactmgr.pdb
+/Users/manoj/Projects/aspnetcore/contactmgr/obj/Debug/netcoreapp2.0/contactmgr.csproj.CoreCompileInputs.cache
+/Users/manoj/Projects/aspnetcore/contactmgr/obj/Debug/netcoreapp2.0/contactmgr.AssemblyInfoInputs.cache
+/Users/manoj/Projects/aspnetcore/contactmgr/obj/Debug/netcoreapp2.0/contactmgr.AssemblyInfo.cs
+/Users/manoj/Projects/aspnetcore/contactmgr/obj/Debug/netcoreapp2.0/contactmgr.dll
+/Users/manoj/Projects/aspnetcore/contactmgr/obj/Debug/netcoreapp2.0/contactmgr.pdb
